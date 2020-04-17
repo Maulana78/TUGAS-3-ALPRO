@@ -1,22 +1,31 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
-
 {
-	int x=10;
+     int x;
+     int *p;
 
-	int *y =&x;
+     x = 30;
+     p = &x;
 
-	cout<<"Nilai dari x  : "<< x <<endl;
 
-	cout<<"Nilai dari &x : "<< &x <<endl;
 
-	cout<<"Nilai dari y  : "<< y <<endl;
+     cout<<"Nilai X   \t\t: "<<x<<endl;
+     cout<<"Alamat X (&X) \t\t: "<<&x<<endl<<endl;
 
-	cout<<"Nilai dari *y : "<< *y <<endl;
+     cout<<"Nilai yang ditunjuk *P\t: "<<*p<<endl;
+     cout<<"Alamat yang ditunjuk *P\t: "<<p<<endl;
+     cout<<"Alamat *P (&P) \t\t: "<<&p<<endl;
 
-	return 0;
+     *p = 20;
 
+     cout<<"\n\n\nNilai X   \t\t: "<<x<<endl;
+     cout<<"Alamat X (&X) \t\t: "<<&x<<endl<<endl;
+
+     cout<<"Nilai yang ditunjuk *P\t: "<<*p<<endl;
+     cout<<"Alamat yang ditunjuk *P\t: "<<p<<endl;
+     cout<<"Alamat *P (&P) \t\t: "<<&p<<endl;
+
+     return 0;
 }
